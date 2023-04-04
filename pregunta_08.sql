@@ -43,4 +43,4 @@
 --
 SELECT strftime('%Y', c23) as 'YEAR', round(avg(c21),6) as 'avg(c21)'
 FROM tbl2
-GROUP BY strftime('%Y', c23);
+GROUP BY 1;

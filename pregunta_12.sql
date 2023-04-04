@@ -42,6 +42,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT  tbl1.K0, round(MAX(c12),2) as 'MAX(c12)', round(min(C12),2) as 'min(C12)'
+SELECT  tbl1.K0 as 'K0', round(max(c12), 2) as 'MAX(c12)', round(min(C12),2) as 'min(C12)'
 FROM tbl1
-GROUP BY K0;
+GROUP BY 1
+ORDER BY 1;
